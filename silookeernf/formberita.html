@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.css">
+    <link rel="stylesheet" href="src/css/mainstyle.css">
+    
+    <title>SILOOKEER NF</title>
+    <link rel="shortcut icon" type="image/icon" href="image/s.png"/>
+  </head>
+  <body>
+    <br>
+      <div class="container-fluid">
+            <h2 align="center">SISTEM INFORMASI LOWONGAN KERJA </h2>
+        </div> 
+        <nav class="navbar navbar-fixed navbar-expand-lg navbar-light" style="background-color: #f8f7ff;"> 
+          <div class="container-fluid"> 
+          <a class="navbar-brand" href="home.html">SILOOKEER</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="lowonganbaru.html">Lowongan Baru</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="isiloker.html">Isi Loker</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dafmit.html">Daftar Mitra</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="berita.html">Berita</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-right" ></ul>
+                <form class="form-inline active-cyan-3 active-cyan-4">
+                  <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                    aria-label="Search">
+                </form>
+                    <a class="nav-link active" aria-current="page" href="LOGIN.html">Login</a>
+                </ul>
+              </div>
+            </div>
+          </nav>
+   <br>
+        <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+              <div class="d-flex justify-content-end">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <i class="fa fa-home" aria-hidden="true"><a href="home.html"> Home</a></i>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a>Form Isi Berita</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-md-12">        
+            <form action="berita.html">
+              <fieldset class="border border-4 p-3  shadow p-3 mb-5 bg-white rounded "  >
+                <legend class="text-center">Form Isi Berita</legend><br><br>
+                  <div class="row">
+                    <div class="col">
+                      <label for="fname">Sumber Berita </label>
+                      <input class="form-control my-3" type="text" id="nama_perusahaan" name="fname" placeholder="Nama Perusahaan"> 
+                    <label for="">Judul Berita</label>
+                    <div class="form-floating">
+                      <textarea class="form-control my-3" placeholder="Leave a comment here" id="judul" style="height: 100px"></textarea>
+                    </div>
+                    <label for="">Deskripsi Berita</label>
+                    <div class="form-floating">
+                      <textarea class="form-control my-3" placeholder="Leave a comment here" id="desc_berita" style="height: 100px"></textarea>
+                    </div>
+                    <div class="form-floating">
+                      <label for="fname">Gambar Berita </label><br>
+                      <input class="form-control my-3" type="file" id="file">
+                    </div>
+                    <label for="" class="my-2" >Tanggal</label>
+                    <input type="date" class="form-control my-3" id="tanggal">
+                    <label for="fname">Email </label>
+                    <input class="form-control my-3" type="email" id="email">
+                    <div class="row mb-4">
+                      <div class="col-sm-10 offset-sm-5">              
+                    <button type="submit" class="btn btn-primary" id="submit" onclick="validasi()">Submit</button>
+                    <button type="reset" class="btn btn-danger" id="reset" onclick="reset()">Reset</button>
+                      </div>  
+                  </div>
+                  </fieldset>
+              </div>
+                          </div>
+                        </div>
+                        </div>  
+                        </div>
+                      </div> 
+
+
+       <!-- Footer-->
+       <div class="container-fluid">
+       <br><br><br><br>
+
+    <div class="container-fluid">
+      <hr>
+      <div class="footer-logo">SILOOKEER</div> 
+        <div class="address">
+        <address>
+          Jalan Lenteng Agung Raya No. 20, <br> Jakarta Selatan - 12640<br> 
+          <i class="fa fa-phone-square"> </i> Phone : (021) 7863191 <br>
+          <i class="fa fa-envelope"> </i> E-Mail : <a class="mail-link" href="mailto:info@nurulfikri.ac.id">info@nurulfikri.ac.id</a>
+          </address>
+        </div>
+      </div>
+
+
+<!-- Java Script -->
+      <script>
+      function validasi() {
+        let nama = document.getElementById("nama_perusahaan").value;
+        let Judul = document.getElementById("judul").value;
+        let desc = document.getElementById("desc_berita").value;
+        let gambar = document.getElementById("file").value;
+        let tanggal = document.getElementById("tanggal").value;
+        let email = document.getElementById("email").value;
+        if (nama != "" && email!="" &&  Judul!="" && desc!="" && gambar!="" && tanggal!="") {
+          return true;
+        }else{
+          alert('Anda harus mengisi data dengan lengkap !');
+        }
+        }
+      function reset() {
+          document.getElementById("newForm").reset();
+        }
+      </script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
+    </body>
+  </html>

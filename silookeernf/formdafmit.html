@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.css">
+    <link rel="stylesheet" href="src/css/mainstyle.css">
+    
+    <title>SILOOKEER NF</title>
+    <link rel="shortcut icon" type="image/icon" href="image/s.png"/>
+  </head>
+  <body>
+    <br>
+      <div class="container-fluid">
+            <h2 align="center">SISTEM INFORMASI LOWONGAN KERJA </h2>
+        </div> 
+        <nav class="navbar navbar-fixed navbar-expand-lg navbar-light" style="background-color: #f8f7ff;"> 
+          <div class="container-fluid"> 
+          <a class="navbar-brand" href="home.html">SILOOKEER</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="lowonganbaru.html">Lowongan Baru</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="isiloker.html">Isi Loker</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="dafmit.html">Daftar Mitra</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="berita.html">Berita</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-right" ></ul>
+                <form class="form-inline active-cyan-3 active-cyan-4">
+                  <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                    aria-label="Search">
+                </form>
+                    <a class="nav-link active" aria-current="page" href="LOGIN.html">Login</a>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <br>
+        <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+              <div class="d-flex justify-content-end">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <i class="fa fa-home" aria-hidden="true"><a href="home.html"> Home</a></i>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a>Form Daftar Mitra</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <div class="container">
+              <div class="col-md-12">        
+                  <form action="formdafmit.html">
+
+          <fieldset class="border border-4 p-3  shadow p-3 mb-5 bg-white rounded "  >
+            <legend class="text-center">Form Menjadi Mitra</legend><br><br>
+            
+          <div class="row">
+            <div class="col">
+              <label for="fname">Nama perusahan/organisasi </label>
+              <input class="form-control my-3" type="text" id="nama_perusahaan" name="fname" placeholder="Masukan nama perusahaan" required>
+              <label for="">Bidang Usaha</label>
+              <select name="" id="bidang_pekerjaan" class="form-control my-3" required>
+            
+             <option value="">Pilih Bidang Usaha..</option>
+              
+             <option value="">Perbankan</option>
+             <option value="">Jasa</option>
+             <option value="">Perdagangan</option>
+            </select>    
+            <label for="">Dekripsi Lowongan</label>
+            <div class="form-floating">
+              <textarea class="form-control my-3" placeholder="Leave a comment here" id="deskripsi_lowongan" style="height: 100px" required></textarea>
+             </div>
+            <label for="">Deskripsi Kualifikasi Lowongan</label>
+            <div class="form-floating">
+              <textarea class="form-control my-3" placeholder="Leave a comment here" id="persyaratan_lowongan" style="height: 100px" required></textarea>        
+            </div>
+            <label for="" class="my-3">Kategori lowongan</label><br>
+            <label class="checkbox-inline mx-3"><input type="checkbox" class="mx-3" value="">Programmer</label>
+            <label class="checkbox-inline m-3"><input type="checkbox" class="mx-3" value="">Network & Infastrukture </label>
+            <label class="checkbox-inline mx-3"><input type="checkbox" class="mx-3" value="">Analyst</label>
+            <label class="checkbox-inline mx-3"><input type="checkbox" class="mx-3" value="">Data Science</label>
+            </div>
+            <label for="" class="my-2" >Tanggal Dateline</label>
+            <input type="date" class="form-control my-3" id="datepicker" required>
+            <label for="fname">Email </label>
+            <input class="form-control my-3" type="email" id="email" name="email" placeholder="Masukkan Email" required>
+            <button type="submit" class="btn btn-primary" onclick="validasi()">Submit</button>
+            <button type="reset" class="btn btn-danger my-2" onclick="reset()">Reset</button>
+              </div>
+              </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>  
+                </div>
+              </div> 
+
+
+
+       <!-- Footer-->
+       <div class="container-fluid">
+       <br><br><br><br>
+
+    <div class="container-fluid">
+      <hr>
+      <div class="footer-logo">SILOOKEER</div> 
+        <div class="address">
+        <address>
+          Jalan Lenteng Agung Raya No. 20, <br> Jakarta Selatan - 12640<br> 
+          <i class="fa fa-phone-square"> </i> Phone : (021) 7863191 <br>
+          <i class="fa fa-envelope"> </i> E-Mail : <a class="mail-link" href="mailto:info@nurulfikri.ac.id">info@nurulfikri.ac.id</a>
+          </address>
+        </div>
+      </div>
+
+
+<!-- Java Script -->
+      <script>
+        function validasi() {
+          let nama = document.getElementById("nama_perusahaan").value;
+          let bidang = document.getElementById("bidang_pekerjaan").value;
+          let desc = document.getElementById("deskripsi_lowongan").value;
+          let syarat = document.getElementById("persyaratan_lowongan").value;
+          let tanggal = document.getElementById("datepicker").value;
+          let email = document.getElementById("email").value;
+          if (nama != "" && email!="" &&  bidang!="" && desc!="" && syarat!="" && tanggal!="" ) {
+            return true;
+          }else{
+            alert('Anda harus mengisi data dengan lengkap !');
+          }
+        }
+        function reset() {
+          document.getElementById("newForm").reset();
+        }
+      </script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
+    </body>
+  </html>
